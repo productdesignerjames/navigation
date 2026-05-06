@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="topbar-figma">
+    <a href="#" class="topbar-link">Offers</a>
+    <a href="#" class="topbar-link">Business</a>
+    <a href="#" class="topbar-link">Landlord</a>
+    <a href="#" class="topbar-link">Accessibility toolbar</a>
+  </div>
+  <header class="navbar">
+    <div class="logo">
+      <img src="assets/combined-logo.svg" alt="Logo" class="logo-img" />
+    </div>
+    <nav class="tabs tabs-figma">
+      <button class="tab tab-figma" data-menu="energy">Energy</button>
+      <button class="tab tab-figma" data-menu="products">Products</button>
+      <button class="tab tab-figma" data-menu="servicing">Servicing</button>
+      <button class="tab tab-figma" data-menu="repairs">Repairs</button>
+      <button class="tab tab-figma" data-menu="cover">Cover</button>
+      <button class="tab tab-figma" data-menu="help">Help</button>
+    </nav>
+    <div class="controls controls-figma">
+      <img src="assets/nav-icon.svg" alt="Icon" class="nav-icon" />
+      <button class="small-btn-figma">Log in</button>
+    </div>
+
+    <!-- Mega Menu Panels -->
+    <div class="mega-menu-panel" data-menu-panel="energy">
+      <div class="mega-menu-inner">
+        <div class="mega-menu-category">
+          <h2 class="mega-menu-heading">Energy</h2>
+          <a href="#" class="mega-menu-view-all">View all energy</a>
+        </div>
+        <div class="mega-menu-grid energy-grid">
+          <a href="#" class="mega-card" style="grid-area: tariffs;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Tariffs</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: prepay;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Prepayment</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: segt;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Smart Export Guarantee Tariff</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: smart;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Smart Tariffs</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: meter;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Submit a Meter Reading</span>
+          </a>
+          <a href="#" class="mega-card mega-card-promo" style="grid-area: promo;">
+            <span class="mega-card-label">Get £100 off your business energy bill</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mega-menu-panel" data-menu-panel="products">
+      <div class="mega-menu-inner">
+        <div class="mega-menu-category">
+          <h2 class="mega-menu-heading">Products</h2>
+          <a href="#" class="mega-menu-view-all">View all products</a>
+        </div>
+        <div class="mega-menu-grid products-grid">
+          <a href="#" class="mega-card" style="grid-area: ev;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Electric Vehicle Charger</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: heat;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Heat Pumps</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: solar;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Solar and Battery</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: boilers;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Boilers</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: smart;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Smart Meter</span>
+          </a>
+          <a href="#" class="mega-card mega-card-promo mega-card-promo-orange" style="grid-area: promo;">
+            <span class="mega-card-label">Enjoy bigger savings with Hive</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mega-menu-panel" data-menu-panel="servicing">
+      <div class="mega-menu-inner">
+        <div class="mega-menu-category">
+          <h2 class="mega-menu-heading">Servicing</h2>
+          <a href="#" class="mega-menu-view-all">View all servicing</a>
+        </div>
+        <div class="mega-menu-grid servicing-grid">
+          <a href="#" class="mega-card" style="grid-area: boiler;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Boiler Service</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: hps;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Heat Pump Service</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: powerflush;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Powerflush</span>
+          </a>
+          <a href="#" class="mega-card mega-card-promo mega-card-promo-blue" style="grid-area: promo;">
+            <span class="mega-card-label">Explore our latest offers</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mega-menu-panel" data-menu-panel="repairs">
+      <div class="mega-menu-inner">
+        <div class="mega-menu-category">
+          <h2 class="mega-menu-heading">Repairs</h2>
+          <a href="#" class="mega-menu-view-all">View all repairs</a>
+        </div>
+        <div class="mega-menu-grid repairs-grid">
+          <a href="#" class="mega-card" style="grid-area: boiler;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Boiler Repairs</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: gas;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Gas Fire Repairs</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: appliance;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Appliance Repairs</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: electrical;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Electrical Repairs</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: plumbing;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Plumbing Repairs</span>
+          </a>
+          <a href="#" class="mega-card mega-card-promo mega-card-promo-blue" style="grid-area: promo;">
+            <span class="mega-card-label">Explore our latest offers</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mega-menu-panel" data-menu-panel="cover">
+      <div class="mega-menu-inner">
+        <div class="mega-menu-category">
+          <h2 class="mega-menu-heading">Cover</h2>
+          <a href="#" class="mega-menu-view-all">View all cover</a>
+        </div>
+        <div class="mega-menu-grid cover-grid">
+          <a href="#" class="mega-card" style="grid-area: boiler;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Boiler and Heating Cover</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: electrical;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Home Electrical Cover</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: plumbing;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Plumbing and Drains Cover</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: heatpump;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Heat Pump Cover</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: appliance;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Appliance Cover</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: landlord;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Landlord Cover</span>
+          </a>
+          <a href="#" class="mega-card mega-card-promo" style="grid-area: promo;">
+            <span class="mega-card-label">Up to 35% off Kitchen Appliance Cover</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="mega-menu-panel" data-menu-panel="help">
+      <div class="mega-menu-inner">
+        <div class="mega-menu-category">
+          <h2 class="mega-menu-heading">Help</h2>
+          <a href="#" class="mega-menu-view-all">View all help</a>
+        </div>
+        <div class="mega-menu-grid help-grid">
+          <a href="#" class="mega-card" style="grid-area: contact;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Contact Us</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: moving;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Moving Home</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: complaints;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Complaints</span>
+          </a>
+          <a href="#" class="mega-card" style="grid-area: account;">
+            <div class="mega-card-img"></div>
+            <span class="mega-card-label">Your Account</span>
+          </a>
+          <a href="#" class="mega-card mega-card-promo mega-card-promo-blue" style="grid-area: promo;">
+            <span class="mega-card-label">Explore our latest offers</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav (hidden by default, shown <1024px) -->
+  <nav class="mobile-nav">
+    <div class="mobile-nav-header">
+      <img src="assets/mobile-logo.svg" alt="Logo" class="mobile-logo-img" />
+      <button class="mobile-menu-btn" aria-label="Open menu">
+        <span class="mobile-menu-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-top">
+        <img src="assets/mobile-logo.svg" alt="Logo" class="mobile-logo-img" />
+        <button class="mobile-close-btn" aria-label="Close menu">&times;</button>
+      </div>
+      <ul class="mobile-menu-list">
+        <li class="mobile-accordion">
+          <button class="mobile-accordion-btn">Energy <span class="mobile-chevron"></span></button>
+          <div class="mobile-accordion-panel">
+            <div class="mobile-bento-grid">
+              <a href="#" class="mobile-bento-card"><span>Tariffs</span></a>
+              <a href="#" class="mobile-bento-card"><span>Smart Tariffs</span></a>
+              <a href="#" class="mobile-bento-card"><span>Prepayment</span></a>
+              <a href="#" class="mobile-bento-card"><span>Submit a Meter Reading</span></a>
+              <a href="#" class="mobile-bento-card"><span>Smart Export Guarantee Tariff</span></a>
+              <a href="#" class="mobile-bento-card mobile-bento-promo"><span>Get £100 off your business energy bill</span></a>
+            </div>
+            <a href="#" class="mobile-view-all">View all energy</a>
+          </div>
+        </li>
+        <li class="mobile-accordion">
+          <button class="mobile-accordion-btn">Products <span class="mobile-chevron"></span></button>
+          <div class="mobile-accordion-panel">
+            <div class="mobile-bento-grid">
+              <a href="#" class="mobile-bento-card"><span>Electric Vehicle Charger</span></a>
+              <a href="#" class="mobile-bento-card"><span>Boilers</span></a>
+              <a href="#" class="mobile-bento-card"><span>Heat Pumps</span></a>
+              <a href="#" class="mobile-bento-card"><span>Smart Meter</span></a>
+              <a href="#" class="mobile-bento-card"><span>Solar and Battery</span></a>
+              <a href="#" class="mobile-bento-card mobile-bento-promo-blue"><span>Explore our latest offers</span></a>
+            </div>
+            <a href="#" class="mobile-view-all">View all products</a>
+          </div>
+        </li>
+        <li class="mobile-accordion">
+          <button class="mobile-accordion-btn">Servicing <span class="mobile-chevron"></span></button>
+          <div class="mobile-accordion-panel">
+            <div class="mobile-bento-grid">
+              <a href="#" class="mobile-bento-card"><span>Boiler Service</span></a>
+              <a href="#" class="mobile-bento-card"><span>Heat Pump Service</span></a>
+              <a href="#" class="mobile-bento-card"><span>Powerflush</span></a>
+              <a href="#" class="mobile-bento-card mobile-bento-promo-blue"><span>Explore our latest offers</span></a>
+            </div>
+            <a href="#" class="mobile-view-all">View all servicing</a>
+          </div>
+        </li>
+        <li class="mobile-accordion">
+          <button class="mobile-accordion-btn">Repairs <span class="mobile-chevron"></span></button>
+          <div class="mobile-accordion-panel">
+            <div class="mobile-bento-grid">
+              <a href="#" class="mobile-bento-card"><span>Boiler Repairs</span></a>
+              <a href="#" class="mobile-bento-card"><span>Electrical Repairs</span></a>
+              <a href="#" class="mobile-bento-card"><span>Gas Fire Repairs</span></a>
+              <a href="#" class="mobile-bento-card"><span>Plumbing Repairs</span></a>
+              <a href="#" class="mobile-bento-card"><span>Appliance Repairs</span></a>
+              <a href="#" class="mobile-bento-card mobile-bento-promo-blue"><span>Explore our latest offers</span></a>
+            </div>
+            <a href="#" class="mobile-view-all">View all repairs</a>
+          </div>
+        </li>
+        <li class="mobile-accordion">
+          <button class="mobile-accordion-btn">Cover <span class="mobile-chevron"></span></button>
+          <div class="mobile-accordion-panel">
+            <div class="mobile-bento-grid">
+              <a href="#" class="mobile-bento-card"><span>Boiler and Heating Cover</span></a>
+              <a href="#" class="mobile-bento-card"><span>Heat Pump Cover</span></a>
+              <a href="#" class="mobile-bento-card"><span>Home Electrical Cover</span></a>
+              <a href="#" class="mobile-bento-card"><span>Appliance Cover</span></a>
+              <a href="#" class="mobile-bento-card"><span>Landlord Cover</span></a>
+              <a href="#" class="mobile-bento-card"><span>Plumbing and Drains Cover</span></a>
+              <a href="#" class="mobile-bento-card mobile-bento-promo"><span>Up to 35% off Kitchen Appliance Cover</span></a>
+            </div>
+            <a href="#" class="mobile-view-all">View all cover</a>
+          </div>
+        </li>
+        <li class="mobile-accordion">
+          <button class="mobile-accordion-btn mobile-accordion-btn-plain">Help</button>
+        </li>
+      </ul>
+      <div class="mobile-menu-footer">
+        <a href="#" class="mobile-footer-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="#fff" stroke-width="1.5"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Log in
+        </a>
+        <a href="#" class="mobile-footer-link">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#fff" stroke-width="1.5"/><path d="M16 16l4 4" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+          Search
+        </a>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <section class="hero-figma">
+      <div class="hero-bg">
+        <img src="assets/hero-ellipse.svg" alt="Ellipse" class="hero-ellipse" />
+      </div>
+      <div class="hero-content">
+        <div class="trustpilot-figma">
+          <span class="great">GREAT</span>
+          <span class="stars">
+            <img src="assets/star-full.svg" alt="Star" />
+            <img src="assets/star-full.svg" alt="Star" />
+            <img src="assets/star-full.svg" alt="Star" />
+            <img src="assets/star-full.svg" alt="Star" />
+            <img src="assets/star-half.svg" alt="Star" />
+          </span>
+          <span class="reviews">198K</span>
+          <span class="trustpilot-logo">
+            <img src="assets/trustpilot-logo.svg" alt="Trustpilot" />
+          </span>
+        </div>
+        <h1 class="hero-title-figma">Compare our gas and electricity tariffs</h1>
+        <div class="hero-buttons-figma">
+          <button class="primary-btn-figma">Get a Quote</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

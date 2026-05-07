@@ -713,11 +713,27 @@ main {
   .mobile-close-btn {
     background: none;
     border: none;
-    color: #fff;
-    font-size: 1.75rem;
+    padding: 0;
     cursor: pointer;
-    padding: 8px;
-    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mobile-close-btn .mobile-menu-icon span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+  }
+
+  .mobile-close-btn .mobile-menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-close-btn .mobile-menu-icon span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+  }
+
+  .mobile-menu-btn.active {
+    visibility: hidden;
   }
 
   /* Accordion list */

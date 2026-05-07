@@ -14,6 +14,12 @@ document.addEventListener('DOMContentLoaded', function () {
 			}
 		});
 	}
+	if (closeBtn && menu && menuBtn) {
+		closeBtn.addEventListener('click', function () {
+			menu.classList.remove('open');
+			menuBtn.classList.remove('active');
+		});
+	}
 
 	// Mobile accordion logic
 	const accordionBtns = document.querySelectorAll('.mobile-accordion-btn');

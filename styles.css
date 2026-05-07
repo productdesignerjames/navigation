@@ -158,9 +158,10 @@ main {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  min-height: 90vh;
+  min-height: max(90vh, 800px);
   background: linear-gradient(180deg, #002f87 0%, #004ecc 30%, #0092f5 58%, #001029 99%);
   overflow: hidden;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
   display: flex;
   align-items: center;
   justify-content: center;

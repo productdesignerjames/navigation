@@ -864,6 +864,9 @@ main {
     background:
       linear-gradient(227deg, #6B0F19 5.8%, #C40024 79.87%) padding-box,
       linear-gradient(180deg, #D60433 0%, #690F19 100%) border-box;
+  }
+
+  .mobile-bento-span {
     grid-column: span 2;
   }
 

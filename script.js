@@ -5,12 +5,13 @@ document.addEventListener('DOMContentLoaded', function () {
 	const closeBtn = document.querySelector('.mobile-close-btn');
 	if (menuBtn && menu) {
 		menuBtn.addEventListener('click', function () {
-			menu.classList.add('open');
-		});
-	}
-	if (closeBtn && menu) {
-		closeBtn.addEventListener('click', function () {
-			menu.classList.remove('open');
+			if (menu.classList.contains('open')) {
+				menu.classList.remove('open');
+				menuBtn.classList.remove('active');
+			} else {
+				menu.classList.add('open');
+				menuBtn.classList.add('active');
+			}
 		});
 	}
 

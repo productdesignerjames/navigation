@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Gabarito', Arial, sans-serif;
   font-size: 16px;
   background: #001029;
   color: #fff;
@@ -31,7 +31,7 @@ main {
   padding: 0 80px;
   font-size: 12px;
   font-weight: 400;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Gabarito', Arial, sans-serif;
   color: #0093f5;
   letter-spacing: 0.08px;
   z-index: 20;
@@ -42,7 +42,7 @@ main {
   color: #0093f5;
   text-decoration: none;
   font-size: 12px;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Gabarito', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 0.08px;
   line-height: 28px;
@@ -62,6 +62,8 @@ main {
 }
 
 /* --- Desktop Navbar --- */
+
+
 .navbar {
   display: flex;
   align-items: center;
@@ -82,6 +84,8 @@ main {
   display: flex;
   align-items: center;
   gap: 8px;
+  position: relative;
+  z-index: 1;
 }
 
 .logo-img {
@@ -92,7 +96,7 @@ main {
 
 .tabs-figma {
   display: flex;
-  gap: 8px;
+  gap: 2px;
   align-items: center;
   justify-content: center;
   flex: 1 1 auto;
@@ -103,11 +107,10 @@ main {
   border: none;
   color: #fcfcfd;
   font-size: 16px;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Gabarito', Arial, sans-serif;
   font-weight: 600;
   padding: 12px 16px;
   border-radius: 100px;
-  min-width: 96px;
   height: 40px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
@@ -122,7 +125,7 @@ main {
 .controls-figma {
   display: flex;
   align-items: center;
-  gap: 48px;
+  gap: 32px;
 }
 
 .nav-icon {
@@ -137,7 +140,7 @@ main {
   border-radius: 100px;
   padding: 8px 16px;
   font-size: 16px;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Gabarito', Arial, sans-serif;
   font-weight: 700;
   height: 40px;
   min-width: 52px;
@@ -155,14 +158,14 @@ main {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 90vh;
   background: linear-gradient(180deg, #002f87 0%, #004ecc 30%, #0092f5 58%, #001029 99%);
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 128px 24px 60px;
-  border-radius: 24px;
+  padding: 128px 80px 60px;
+  border-radius: 40px;
 }
 
 .hero-bg {
@@ -176,13 +179,34 @@ main {
 
 .hero-ellipse {
   position: absolute;
-  left: 10%;
-  top: -15%;
+  left: -20%;
+  top: -25%;
   width: 55%;
   max-width: 804px;
   height: auto;
   pointer-events: none;
   opacity: 0.7;
+  filter: blur(81px);
+}
+
+.hero-character {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.hero-character-left {
+  bottom: 10%;
+  left: -5%;
+  width: 22%;
+  max-width: 300px;
+}
+
+.hero-character-right {
+  top: 15%;
+  right: -3%;
+  width: 28%;
+  max-width: 380px;
 }
 
 .hero-content {
@@ -236,8 +260,8 @@ main {
 }
 
 .hero-title-figma {
-  font-family: 'Inter', Arial, sans-serif;
-  font-size: clamp(2rem, 5vw, 4.5rem);
+  font-family: 'Gabarito', Arial, sans-serif;
+  font-size: clamp(56px, 2.2vw + 47.5px, 72px);
   font-weight: 700;
   color: #fff;
   text-align: center;
@@ -259,7 +283,7 @@ main {
   border-radius: 100px;
   padding: 8px 32px;
   font-size: 18px;
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Gabarito', Arial, sans-serif;
   font-weight: 700;
   height: 50px;
   min-width: 154px;
@@ -279,6 +303,7 @@ main {
 /* --- Mega Menu --- */
 .navbar.mega-open {
   background: #001029;
+  border-bottom: 0.5px solid #0066cc;
 }
 
 .mega-menu-panel {
@@ -290,7 +315,7 @@ main {
   height: 640px;
   background: #001029;
   border-top: 0.5px solid #0066cc;
-  padding: 44px 80px 53px;
+  padding: 56px 80px;
   z-index: 10;
   border-radius: 0 0 40px 40px;
   box-sizing: border-box;
@@ -351,7 +376,7 @@ main {
 }
 
 .mega-menu-heading {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Gabarito', Arial, sans-serif;
   font-size: 2rem;
   font-weight: 700;
   margin: 0;
@@ -364,8 +389,8 @@ main {
   justify-content: center;
   color: #fff;
   text-decoration: none;
-  font-size: 14px;
-  font-family: 'Inter', Arial, sans-serif;
+  font-size: 18px;
+  font-family: 'Gabarito', Arial, sans-serif;
   font-weight: 600;
   padding: 10px 20px;
   background:
@@ -472,7 +497,7 @@ main {
 }
 
 .mega-card-label {
-  font-family: 'Inter', Arial, sans-serif;
+  font-family: 'Gabarito', Arial, sans-serif;
   font-size: 22px;
   font-weight: 700;
   line-height: 1.3;
@@ -512,6 +537,12 @@ main {
 }
 
 /* --- Responsive navbar padding --- */
+@media (max-width: 1440px) {
+  .hero-figma {
+    border-radius: 16px;
+  }
+}
+
 @media (max-width: 1280px) {
   .navbar {
     padding: 20px 56px;
@@ -519,6 +550,13 @@ main {
   .mega-menu-panel {
     padding-left: 56px;
     padding-right: 56px;
+  }
+  .hero-figma {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+  .hero-ellipse {
+    width: 45%;
   }
 }
 
@@ -540,10 +578,37 @@ main {
     padding-left: 24px;
     padding-right: 24px;
   }
+  .hero-figma {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
 }
 
 /* --- Responsive: under 1024px --- */
 @media (max-width: 1023px) {
+  .hero-figma {
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 0;
+  }
+
+  .hero-character-left {
+    bottom: -3%;
+    left: -10%;
+    width: 45%;
+  }
+
+  .hero-character-right {
+    top: 7%;
+    right: -5%;
+    width: 40%;
+    z-index: 1;
+  }
+
+  .hero-ellipse {
+    width: 62%;
+  }
+
   /* Hide desktop nav */
   .navbar,
   .topbar-figma {
@@ -571,18 +636,20 @@ main {
   }
 
   .mobile-logo-img {
-    height: 22px;
-    width: 25px;
+    height: 30px;
+    width: auto;
   }
 
   .mobile-menu-btn {
     background: none;
     border: none;
-    padding: 8px;
+    padding: 0;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    z-index: 102;
   }
 
   .mobile-menu-icon {
@@ -591,14 +658,28 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
   }
 
   .mobile-menu-icon span {
     display: block;
     width: 28px;
-    height: 3px;
+    height: 2.5px;
     background: #fff;
     border-radius: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  .mobile-menu-btn.active .mobile-menu-icon span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+  }
+
+  .mobile-menu-btn.active .mobile-menu-icon span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .mobile-menu-btn.active .mobile-menu-icon span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
   }
 
   /* Mobile menu overlay */
@@ -661,7 +742,7 @@ main {
     border: none;
     color: #fff;
     font-size: 1.1rem;
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: 'Gabarito', Arial, sans-serif;
     font-weight: 600;
     cursor: pointer;
     text-align: left;
@@ -691,8 +772,11 @@ main {
 
   /* Accordion panel */
   .mobile-accordion-panel {
-    display: none;
-    padding: 8px 24px 16px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 24px;
+    opacity: 0;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.3s ease, padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .mobile-accordion.open {
@@ -705,7 +789,30 @@ main {
   }
 
   .mobile-accordion.open .mobile-accordion-panel {
-    display: block;
+    max-height: 800px;
+    opacity: 1;
+    padding: 8px 24px 16px;
+  }
+
+  .mobile-accordion.open .mobile-bento-card {
+    animation: cardSlideUp 0.4s cubic-bezier(0.4, 0, 0.2, 1) both;
+  }
+  .mobile-accordion.open .mobile-bento-card:nth-child(1) { animation-delay: 0.05s; }
+  .mobile-accordion.open .mobile-bento-card:nth-child(2) { animation-delay: 0.1s; }
+  .mobile-accordion.open .mobile-bento-card:nth-child(3) { animation-delay: 0.15s; }
+  .mobile-accordion.open .mobile-bento-card:nth-child(4) { animation-delay: 0.2s; }
+  .mobile-accordion.open .mobile-bento-card:nth-child(5) { animation-delay: 0.25s; }
+  .mobile-accordion.open .mobile-bento-card:nth-child(6) { animation-delay: 0.3s; }
+
+  @keyframes cardSlideUp {
+    from {
+      opacity: 0;
+      transform: translateY(12px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
   /* Mobile bento grid */
@@ -721,7 +828,7 @@ main {
       linear-gradient(#001029, #001029) padding-box,
       linear-gradient(180deg, #83B5FF 0%, #0093F5 100%) border-box;
     border: 1.5px solid transparent;
-    border-radius: 16px;
+    border-radius: 32px;
     padding: 16px;
     text-decoration: none;
     color: #fff;
@@ -729,7 +836,7 @@ main {
     flex-direction: column;
     justify-content: flex-end;
     min-height: 100px;
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: 'Gabarito', Arial, sans-serif;
     font-size: 14px;
     font-weight: 700;
     line-height: 1.3;
@@ -740,6 +847,7 @@ main {
     background:
       linear-gradient(227deg, #6B0F19 5.8%, #C40024 79.87%) padding-box,
       linear-gradient(180deg, #D60433 0%, #690F19 100%) border-box;
+    grid-column: span 2;
   }
 
   /* Mobile promo blue */
@@ -755,8 +863,8 @@ main {
     text-align: center;
     color: #fff;
     text-decoration: none;
-    font-size: 14px;
-    font-family: 'Inter', Arial, sans-serif;
+    font-size: 16px;
+    font-family: 'Gabarito', Arial, sans-serif;
     font-weight: 600;
     padding: 12px 20px;
     background:
@@ -768,8 +876,7 @@ main {
 
   /* Footer links */
   .mobile-menu-footer {
-    padding: 16px 24px 32px;
-    border-top: 1px solid #0093F5;
+    padding: 24px;
     margin-top: 16px;
     flex-shrink: 0;
   }
@@ -781,10 +888,10 @@ main {
     color: #fff;
     text-decoration: none;
     font-size: 1rem;
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: 'Gabarito', Arial, sans-serif;
     font-weight: 600;
     padding: 16px 0;
-    border-bottom: 1px solid #0093F5;
+    border-top: 1px solid #0093F5;
   }
 
   .mobile-footer-link:last-child {
@@ -795,6 +902,36 @@ main {
     width: 24px;
     height: 24px;
     flex-shrink: 0;
+  }
+
+  .mobile-secondary-links {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(0, 30, 70, 0.5);
+    border-radius: 32px 32px 0 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .mobile-secondary-link {
+    color: #0093F5;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-family: 'Gabarito', Arial, sans-serif;
+    font-weight: 600;
+    padding: 14px 16px;
+    border-bottom: 1px solid rgba(0, 147, 245, 0.2);
+  }
+
+  .mobile-secondary-link:last-child {
+    border-bottom: none;
+  }
+
+  .mobile-secondary-link:hover {
+    color: #fff;
+    background: rgba(0, 147, 245, 0.1);
   }
 
   /* Hero responsive */
@@ -808,7 +945,6 @@ main {
   }
 
   .hero-title-figma {
-    font-size: clamp(1.5rem, 7vw, 2.5rem);
     letter-spacing: -0.5px;
   }
 
@@ -819,8 +955,8 @@ main {
     padding: 8px 24px;
   }
 
-  .trustpilot-figma .stars img {
-    width: 18px;
-    height: 18px;
+  .trustpilot-figma svg {
+    width: 240px;
+    height: auto;
   }
 }

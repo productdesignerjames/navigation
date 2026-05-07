@@ -54,13 +54,7 @@ main {
 }
 
 .topbar-offers {
-  background:
-    linear-gradient(194deg, #0093F5 -2.48%, #002F87 40.31%) padding-box,
-    linear-gradient(180deg, #2C6BE3 0%, #0093F5 100%) border-box;
-  border: 1px solid transparent;
-  border-radius: 100px;
-  padding: 2px 12px;
-  color: #fff;
+  color: #0093f5;
 }
 
 .topbar-offers:hover {

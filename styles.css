@@ -792,7 +792,7 @@ main {
   .mobile-accordion.open .mobile-accordion-panel {
     max-height: 800px;
     opacity: 1;
-    padding: 8px 24px 16px;
+    padding: 24px 16px;
   }
 
   .mobile-accordion.open .mobile-bento-card {
@@ -820,8 +820,8 @@ main {
   .mobile-bento-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-bottom: 12px;
+    gap: 16px;
+    margin-bottom: 24px;
   }
 
   .mobile-bento-card {
@@ -829,7 +829,7 @@ main {
       linear-gradient(#001029, #001029) padding-box,
       linear-gradient(180deg, #83B5FF 0%, #0093F5 100%) border-box;
     border: 1.5px solid transparent;
-    border-radius: 32px;
+    border-radius: 24px;
     padding: 16px;
     text-decoration: none;
     color: #fff;
@@ -838,7 +838,7 @@ main {
     justify-content: flex-end;
     min-height: 100px;
     font-family: 'Gabarito', Arial, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 1.3;
   }

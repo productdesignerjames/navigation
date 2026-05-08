@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', function () {
 			tabs.forEach(function (t) {
 				t.classList.remove('active');
 			});
-		}, 200);
+		}, 300);
 	}
 
 	tabs.forEach(function (tab) {

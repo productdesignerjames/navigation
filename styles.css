@@ -78,6 +78,7 @@ main {
   width: 100%;
   max-width: 1440px;
   z-index: 10;
+  transition: background 0.5s cubic-bezier(0.4, 0, 0.2, 1), border-bottom 0.5s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .logo {
@@ -306,6 +307,7 @@ main {
 .navbar.mega-open {
   background: #001029;
   border-bottom: 0.5px solid #0066cc;
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1), border-bottom 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mega-menu-panel {
@@ -325,6 +327,7 @@ main {
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
+  transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s 0.5s;
 }
 
 .mega-menu-panel.active {
@@ -332,6 +335,7 @@ main {
   visibility: visible;
   pointer-events: auto;
   z-index: 11;
+  transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s;
 }
 
 .mega-menu-panel.active .mega-card {

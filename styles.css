@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+/* Global focus state */
+a:focus-visible,
+button:focus-visible,
+a:focus,
+button:focus {
+  outline: none !important;
+  box-shadow: 0 0 0 3px #FFCA09 !important;
+}
+
 body {
   margin: 0;
   font-family: 'Gabarito', Arial, sans-serif;
@@ -36,6 +45,7 @@ main {
   letter-spacing: 0.08px;
   z-index: 20;
   position: relative;
+  border-radius: 40px 40px 0 0;
 }
 
 .topbar-link {
@@ -132,6 +142,17 @@ main {
   gap: 32px;
 }
 
+.nav-icon-btn {
+  background: none;
+  border: none;
+  padding: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
 .nav-icon {
   width: 23px;
   height: 23px;
@@ -155,11 +176,6 @@ main {
 .small-btn-figma:hover {
   background: #0066cc;
   color: #ffffff;
-}
-
-.small-btn-figma:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 147, 245, 0.6);
 }
 
 /* --- Hero Section --- */
@@ -331,7 +347,6 @@ main {
   z-index: 10;
   border-radius: 0 0 40px 40px;
   box-sizing: border-box;
-  overflow: hidden;
   pointer-events: none;
   opacity: 0;
   visibility: hidden;
@@ -421,11 +436,6 @@ main {
   border-color: #2C6BE3;
 }
 
-.mega-menu-view-all:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 147, 245, 0.6);
-}
-
 .mega-menu-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -433,7 +443,7 @@ main {
   gap: 24px;
   flex: 1;
   height: 100%;
-  overflow: hidden;
+  overflow: visible;
 }
 
 /* Energy bento grid */
@@ -517,11 +527,6 @@ main {
 
 .mega-card:hover::before {
   opacity: 1;
-}
-
-.mega-card:focus {
-  outline: none;
-  box-shadow: 0 0 0 3px rgba(0, 147, 245, 0.6);
 }
 
 .mega-card:hover .mega-card-label {

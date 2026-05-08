@@ -89,6 +89,26 @@ document.addEventListener('DOMContentLoaded', function () {
 		}, 300);
 	}
 
+	document.addEventListener('keydown', function (e) {
+		if (e.key === 'Escape') {
+			// Close desktop mega menu
+			clearTimeout(closeTimeout);
+			panels.forEach(function (p) {
+				p.classList.remove('active');
+			});
+			activePanel = null;
+			navbar.classList.remove('mega-open');
+			tabs.forEach(function (t) {
+				t.classList.remove('active');
+			});
+			// Close mobile menu
+			if (menu && menu.classList.contains('open')) {
+				menu.classList.remove('open');
+				menuBtn.classList.remove('active');
+			}
+		}
+	});
+
 	tabs.forEach(function (tab) {
 		tab.addEventListener('mouseenter', function () {
 			openMenu(tab.dataset.menu);

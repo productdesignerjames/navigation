@@ -110,11 +110,14 @@ main {
   font-size: 16px;
   font-family: 'Gabarito', Arial, sans-serif;
   font-weight: 600;
-  padding: 12px 16px;
+  padding: 0 16px;
   border-radius: 100px;
   height: 40px;
   cursor: pointer;
   transition: background 0.2s, color 0.2s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .tab-figma.active,
@@ -485,14 +488,25 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   gap: 12px;
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition: transform 0.3s ease;
   overflow: hidden;
+  position: relative;
+  z-index: 0;
 }
 
-.mega-card:hover {
-  background:
-    linear-gradient(#2C6BE3, #2C6BE3) padding-box,
-    linear-gradient(180deg, #83B5FF 0%, #0093F5 100%) border-box;
+.mega-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 30px;
+  background: #2C6BE3;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: -1;
+}
+
+.mega-card:hover::before {
+  opacity: 1;
 }
 
 .mega-card:hover .mega-card-label {
@@ -584,6 +598,7 @@ main {
     padding-right: 24px;
   }
   .hero-figma {
+    min-height: 100vh;
     padding-left: 24px;
     padding-right: 24px;
   }
@@ -592,15 +607,15 @@ main {
 /* --- Responsive: under 1024px --- */
 @media (max-width: 1023px) {
   .hero-figma {
-    padding-left: 32px;
-    padding-right: 32px;
+    min-height: 90vh;
+    padding: 80px 16px 40px;
     border-radius: 0;
   }
 
   .hero-character-left {
     bottom: -3%;
     left: -10%;
-    width: 45%;
+    width: 40%;
   }
 
   .hero-character-right {
@@ -960,7 +975,7 @@ main {
 
   /* Hero responsive */
   .hero-figma {
-    min-height: 80vh;
+    min-height: 90vh;
     padding: 80px 16px 40px;
   }
 

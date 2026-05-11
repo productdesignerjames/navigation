@@ -589,6 +589,9 @@ main {
 
 .mega-card-promo:hover {
   opacity: 0.9;
+  background:
+    linear-gradient(227deg, #6B0F19 5.8%, #C40024 79.87%) padding-box,
+    linear-gradient(180deg, #83B5FF 0%, #0093F5 100%) border-box;
 }
 
 .mega-card-promo .mega-card-label {
@@ -602,8 +605,20 @@ main {
     linear-gradient(180deg, #FF8C42 0%, #C44D00 100%) border-box;
 }
 
+.mega-card-promo-orange:hover {
+  background:
+    linear-gradient(207deg, #FF8C42 -5%, #E85D04 80%) padding-box,
+    linear-gradient(180deg, #83B5FF 0%, #0093F5 100%) border-box;
+}
+
 /* Promo card - blue (Servicing, Repairs, Help) */
 .mega-card-promo-blue {
+  background:
+    linear-gradient(207deg, #0093F5 -5%, #002f87 80%) padding-box,
+    linear-gradient(180deg, #83B5FF 0%, #0093F5 100%) border-box;
+}
+
+.mega-card-promo-blue:hover {
   background:
     linear-gradient(207deg, #0093F5 -5%, #002f87 80%) padding-box,
     linear-gradient(180deg, #83B5FF 0%, #0093F5 100%) border-box;

@@ -340,7 +340,7 @@ main {
 }
 
 .primary-btn-figma {
-  background: #edeef0;
+  background: #AAFF1F;
   color: #001029;
   border: none;
   border-radius: 100px;
@@ -355,7 +355,7 @@ main {
 }
 
 .primary-btn-figma:hover {
-  background: #c9e4ff;
+  background: #8fdd10;
 }
 
 /* --- Mobile Nav (hidden on desktop) --- */

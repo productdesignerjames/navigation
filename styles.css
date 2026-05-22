@@ -196,7 +196,7 @@ main {
 }
 
 .small-btn-figma {
-  background: #fcfcfd;
+  background: #AAFF1F;
   color: #001029;
   border: none;
   border-radius: 100px;
@@ -211,7 +211,7 @@ main {
 }
 
 .small-btn-figma:hover {
-  background: #c9e4ff;
+  background: #8fdd10;
 }
 
 /* --- Hero Section --- */
